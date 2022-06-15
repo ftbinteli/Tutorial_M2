@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercício 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<!-- Exercício 1 -->
+<body>
+    <h2>
+        Digite um número inteiro de três dígitos
+    </h2>
+    <div>
+        <input type="number" id="Primeiro número">
+    </div>
+    <div>
+        <input type="text" id="Segundo número">
+    </div>
+    
+</body>
+
+<script>
+    var a, b, operação, resultado;
+    a = Number.parseFloat(input("Primeiro número:"));
+    b = Number.parseFloat(input("Segundo número:"));
+    operação = input("Digite a operação a realizar (+,-,* ou /):");
+    if (operação === "+") {
+      resultado = a + b;
+    } else {
+      if (operação === "-") {
+        resultado = a - b;
+      } else {
+        if (operação === "*") {
+          resultado = a * b;
+        } else {
+          if (operação === "/") {
+            resultado = a / b;
+          } else {
+            console.log("Operação inválida!");
+            resultado = 0;
+          }
+        }
+      }
+    }
+
+    console.log("Resultado: ", resultado);
+</script>
+</html>
